@@ -357,7 +357,7 @@ namespace ModUtils
 
 		for (size_t i = 0; i < 10000; i++)
 		{
-			HWND hwnd = FindWindowExA(NULL, NULL, NULL, "ELDEN RING™");
+			HWND hwnd = FindWindowExA(NULL, NULL, NULL, "ELDEN RING?");
 			DWORD processId = 0;
 			GetWindowThreadProcessId(hwnd, &processId);
 			if (processId == GetCurrentProcessId())
