@@ -1,20 +1,20 @@
-Ôªø#include <Windows.h>
+#include <Windows.h>
 #include "ModUtils.h"
 
 using namespace ModUtils;
 
 DWORD WINAPI MainThread(LPVOID lpParam)
 {
-	Log("Activating DisableRuneLoss...");
-	std::vector<uint16_t> pattern = 
-	{ 0xb0, 0x01, MASKED, 0x8b, MASKED, 0xe8, MASKED, MASKED, MASKED, MASKED, MASKED, 0x8b, MASKED, MASKED, MASKED, 0x32, 0xc0, MASKED, 0x83, MASKED, 0x28, 0xc3 };
+	Log("œ‘ æÀ˘”–¥Õ∏£µ„º”‘ÿ........");
+	std::vector<uint16_t> pattern =
+	{ 0x48,0x8B,0x7C,0x24,0x58,0x84,0xC0,0x74,0x02,0xB0,0x01,0xF6,0xC3,0x01 };
 	uintptr_t patchAddress = SigScan(pattern);
 	if (patchAddress != 0)
 	{
-		patchAddress += 5;
-		Replace(patchAddress, { 0xe8 }, { 0x90, 0x90, 0x90, 0x90, 0x90 });
+		patchAddress += 7;
+		Replace(patchAddress, { 0x74,0x02 }, { 0x90, 0x90 });
 	}
-	CloseLog();
+	//CloseLog();
 	return 0;
 }
 
