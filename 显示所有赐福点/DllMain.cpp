@@ -14,7 +14,7 @@ DWORD WINAPI MainThread(LPVOID lpParam)
 		patchAddress += 7;
 		Replace(patchAddress, { 0x74,0x02 }, { 0x90, 0x90 });
 	}
-	//CloseLog();
+	CloseLog();
 	return 0;
 }
 
