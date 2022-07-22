@@ -6,9 +6,9 @@ using namespace ModUtils;
 using namespace mINI;
 
 uintptr_t patchAddress = 0;
-static unsigned int key = 0x50;
+static unsigned int key = 0x4D;
 static unsigned int modifier = HK_NONE;
-static bool flag = true;
+static bool flag = false;
 
 DWORD WINAPI MainThread(LPVOID lpParam)
 {

@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "console", "console\console.vcxproj", "{80D450A3-15A6-451B-977D-FDB13D68F896}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示所有赐福点", "显示所有赐福点\显示所有赐福点.vcxproj", "{90273855-A4BD-4A80-A712-B55B336D928E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "显示赐福点", "显示所有赐福点\显示赐福点.vcxproj", "{90273855-A4BD-4A80-A712-B55B336D928E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
